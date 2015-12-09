@@ -1,0 +1,7 @@
+{
+    "name": "website",
+    "devDependencies": {
+        "bootstrap": "latest",
+        "bootstrap-sass": "latest"
+    }
+}

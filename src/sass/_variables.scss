@@ -1,0 +1,28 @@
+$gator-blue: rgb(0, 84, 150);
+$gator-orange: rgb(243, 112, 33);
+
+$sgm-text-color: darken($gator-blue, 10%) !default;
+$sgm-bg: lighten($gator-blue, 65%);
+
+$navbar-sgm-color:               $sgm-text-color !default;
+$navbar-sgm-bg:                  $sgm-bg !default;
+$navbar-sgm-border:              transparent !default;
+
+// Navbar links
+$navbar-sgm-link-color:          $sgm-text-color !default;
+$navbar-sgm-link-hover-color:    lighten($sgm-text-color, 25%) !default;
+$navbar-sgm-link-hover-bg:       transparent !default;
+$navbar-sgm-link-active-color:   lighten($sgm-text-color, 12.5%) !default;
+$navbar-sgm-link-active-bg:      darken($navbar-sgm-bg, 6.5%) !default;
+$navbar-sgm-link-disabled-color: #ccc !default;
+$navbar-sgm-link-disabled-bg:    transparent !default;
+
+// Navbar brand label
+$navbar-sgm-brand-color:         $navbar-sgm-link-color !default;
+$navbar-sgm-brand-hover-color:   darken($navbar-sgm-brand-color, 10%) !default;
+$navbar-sgm-brand-hover-bg:      transparent !default;
+
+// Navbar toggle
+$navbar-sgm-toggle-hover-bg:     #ddd !default;
+$navbar-sgm-toggle-icon-bar-bg:  #888 !default;
+$navbar-sgm-toggle-border-color: #ddd !default;

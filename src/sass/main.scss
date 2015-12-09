@@ -1,0 +1,59 @@
+//@import "../../bower_components/bootstrap/scss/bootstrap-flex";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "variables";
+@import "navbar";
+
+body {
+    color: $sgm-text-color;
+    background-color: $sgm-bg;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $sgm-text-color;
+    margin-top: 10px;
+    border-bottom: 1px solid $gator-orange;
+    padding: 20px 0 4px 0;
+}
+
+a {
+    color: $gator-blue;
+}
+
+.container-main {
+    background-color: #FFFFFF;
+    margin-bottom: 200px;
+    border-radius: 10px;
+}
+
+.header-main {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.table-open-border {
+    tr:last-of-type {
+        border-bottom: 1px solid $table-border-color;
+    }
+}
+
+ul {
+    margin-left: -18px;
+    list-style-image: url(../img/bullet-orange.png);
+    
+    ul {
+        margin-bottom: 10px;
+    }
+}
+
+ul.job-list {
+    margin-bottom: 30px;
+}
+
+table.skills-list {
+    tr {
+        td:first-child {
+            padding-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "website",
+    "version": "0.0.1",
+    "description": "Scott Mansfield's resume website",
+    "repository": { },
+    "dependencies": { },
+    "devDependencies": {
+        "bower": "latest",
+        "coffee-script": "latest",
+        "del": "latest",
+        "gulp": "latest",
+        "gulp-coffee": "latest",
+        "gulp-jade": "latest",
+        "gulp-minify-css": "latest",
+        "gulp-rename": "latest",
+        "gulp-sass": "latest",
+        "gulp-util": "latest"
+    }
+}

@@ -1,0 +1,135 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "variables.scss";
+
+// Default navbar
+.navbar-sgm {
+  background-color: $navbar-sgm-bg;
+  border-color: $navbar-sgm-border;
+
+  .navbar-brand {
+    color: $navbar-sgm-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-sgm-brand-hover-color;
+      background-color: $navbar-sgm-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-sgm-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-sgm-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-sgm-link-hover-color;
+        background-color: $navbar-sgm-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-sgm-link-active-color;
+        background-color: $navbar-sgm-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-sgm-link-disabled-color;
+        background-color: $navbar-sgm-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: $navbar-sgm-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-sgm-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-sgm-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $navbar-sgm-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-sgm-link-active-bg;
+        color: $navbar-sgm-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $navbar-sgm-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-sgm-link-hover-color;
+            background-color: $navbar-sgm-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-sgm-link-active-color;
+            background-color: $navbar-sgm-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-sgm-link-disabled-color;
+            background-color: $navbar-sgm-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: $navbar-sgm-link-color;
+    &:hover {
+      color: $navbar-sgm-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $navbar-sgm-link-color;
+    &:hover,
+    &:focus {
+      color: $navbar-sgm-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $navbar-sgm-link-disabled-color;
+      }
+    }
+  }
+}

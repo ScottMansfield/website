@@ -1,0 +1,313 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        
+        title Scott Mansfield
+        
+        link(href="css/main.min.css" rel="stylesheet")
+        
+        script(src="js/jquery.min.js")
+        script(src="js/bootstrap.min.js")
+        script.
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-27418211-1', 'auto');
+            ga('send', 'pageview');
+    body
+        nav.navbar.navbar-sgm
+            .container
+                .navbar-header: .navbar-brand Scott Mansfield
+                #navbar.navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li: a(href="http://blog.sgmansfield.com") Blog
+                        li: a(href="#contact") Contact
+                        li: a(href="#projects") Projects
+                        li: a(href="#experience") Experience
+                        li: a(href="#education") Education
+                        li: a(href="#skills") Skills
+                        li: a(href="#extras") Extras
+                
+        .container.container-main
+            .row
+                .col-md-12: h1.header-main Scott Gregory Mansfield
+
+            .row
+                .col-md-12: h2#contact Contact
+            .row
+                .col-md-12
+                    table.table.table-hover.table-open-border
+                        tbody
+                            tr
+                                td: strong Email:
+                                td: a(href="mailto:sgmansf@gmail.com") sgmansf@gmail.com
+                            tr
+                                td: strong Alternate Email:
+                                td: a(href="mailto:scott@sgmansfield.com") scott@sgmansfield.com
+                            tr
+                                td: strong Phone (mobile):
+                                td: a(href="tel:+13525149452") 352-514-9452
+
+            .row
+                .col-md-12
+                    h2#projects Projects
+            .row
+                .col-md-12
+                    ul
+                        li
+                            strong Widow: 
+                            | A distributed web crawler (Java, AWS)
+                            a.pull-right(href="http://www.widowcrawler.com") widowcrawler.com
+                        li
+                            strong Rend: 
+                            | A cache proxy to manage data chunking and multi-level caching (Go)
+                            a.pull-right(href="https://github.com/Netflix/rend") github.com/Netflix/rend
+                    strong Skunkworks or Older Projects
+                    ul
+                        li
+                            strong DreamHostAdmin: 
+                            | Strightforward GUI to manage DreamHost resources by directly interacting with the API.
+                            a.pull-right(href="http://sourceforge.net/projects/dreamhostadmin/") http://sourceforge.net/projects/dreamhostadmin/
+                        li Creating a reusable library to drive a Charlieplex display on the Digispark platform
+                        li Created an automated website backup to Amazon S3 (PHP, bash)
+                        li Made a simple graphing calculator titled SimpleCalc (C#, WinForms)
+
+            .row
+                .col-md-12
+                    h2#experience Experience
+            .row
+                .col-md-12
+                    strong Netflix
+                    | , Los Gatos, CA
+                    .pull-right June 2014 &mdash; present
+                    br
+                    em Senior Software Engineer
+                    ul.job-list
+                        li Development on EVCache, a distributed caching library for dynamic and high-volume systems.
+                        li Design and implementation of back-end management systems around the caching tier.
+                        li Management of 14000+ cache servers that back many important services.
+                        li Introduced and integrated new service and method for managing routing through Netflix's prod Zuul.
+                        li Completed metadata library transition on core website Java application.
+            .row
+                .col-md-12
+                    strong Amazon Web Services
+                    | , Seattle, WA
+                    .pull-right July 2012 &mdash; June 2014
+                    br
+                    em Software Development Engineer (SDE II from April 2014)
+                    ul.job-list
+                        li Created a high performance website rendering engine for the next generation of aws.amazon.com.
+                        li Designed a highly scalable search indexer to index the AWS marketing website.
+                        li Attended infrastructure training to learn best practices for large-scale cloud-based system design.
+                        li Support for multiple critical systems behind the AWS Marketing website.
+            .row
+                .col-md-12
+                    strong Amazon.com
+                    | , Seattle, WA
+                    .pull-right May 2012 &mdash; July 2012
+                    br
+                    em Software Development Engineer Intern
+                    ul.job-list
+                        li Created a service to facilitate a new search infrastructure around CloudSearch for aws.amazon.com.
+                        li Integrated the new service with existing Ruby on Rails website for real-time updates to search database.
+                        li Set up thorough monitoring for operational excellence.
+            .row
+                .col-md-12
+                    strong Walt Disney Parks and Resorts
+                    | , Orlando, FL
+                    .pull-right January 2012 &mdash; May 2012
+                    br
+                    em GBTS Professional Intern
+                    ul.job-list
+                        li Created application to monitor the health of a large ride-management system.
+                        li Designed and implemented back end database and WCF services.
+                        li Created rich Silverlight client application using Prism, Unity, and the MVVM Light Toolkit.
+                        li Designed extendable code library for collection of data from large systems.
+            .row
+                .col-md-12
+                    strong GE Healthcare
+                    | , Milwaukee, WI
+                    .pull-right May 2011 &mdash; August 2011
+                    br
+                    em Information Management Leadership Program Intern
+                    ul.job-list
+                        li Led several infrastructure projects to supply application owners with required hardware.
+                        li Created and ran initiative in an extracurricular committee dedicated to leadership.
+                        li Managed knowledge base for external reference and enhanced internal team workflow.
+            .row
+                .col-md-12
+                    strong Integrated Product & Process Design
+                    | , Gainesville, FL
+                    .pull-right August 2010 &mdash; May 2011
+                    br
+                    em Software Engineer, Student
+                    ul.job-list
+                        li Created an interactive restaurant table for Walt Disney Parks & Resorts.
+                        li Applied human-computer interaction concepts to create an enthralling experience.
+                        li Gained experience presenting and defending concepts and ideas to large groups.
+            .row
+                .col-md-12
+                    strong GE Hitachi Nuclear Energy
+                    | , Wilmington, NC
+                    .pull-right June 2010 &mdash; August 2010
+                    br
+                    em Software Engineering Intern
+                    ul.job-list
+                        li Created a program using Windows Presentation Foundation to view and edit proprietary database files.
+                        li Rewrote part of an engineering program used to analyze stresses on reactor control rods.
+                        li Taught class on the C# programming language.
+            .row
+                .col-md-12
+                    strong University of Florida
+                    | , Gainesville, FL
+                    .pull-right January 2010 &mdash; April 2010
+                    br
+                    em Research Assistant
+                    ul.job-list
+                        li Performed lab tests to test experimental additions to the current wireless communications standard.
+                        li Wrote reports on the current state of wireless network technology.
+            .row
+                .col-md-12
+                    strong SpinCore Technologies, Inc.
+                    | , Gainesville, FL
+                    .pull-right November 2008 &mdash; April 2009
+                    br
+                    em Web Developer
+                    ul.job-list
+                        li Improved organization, usability, and maintainability of company website.
+                        li Created internal website used to organize and coordinate employee information exchange.
+
+            .row
+                .col-md-12
+                    h2#skills Skills
+            .row
+                .col-md-12
+                    table.skills-list
+                        tr
+                            td: strong Languages:
+                            td Java, Go, Scala, Ruby, C# / XAML, C, C++, CUDA
+                        tr
+                            td: strong Web Development:
+                            td Java EE, JavaScript, CoffeeScript, AngularJS, CSS, SASS, HTML, Jade
+                        tr
+                            td: strong Additional Tech:
+                            td AWS, Spring MVC, jUnit, MVVM
+                        tr
+                            td: strong Operating Systems:
+                            td Windows, Mac OSX, Linux
+                        tr
+                            td: strong Functional Skills:
+                            td Distributed Application Architecture, Object Oriented Design and Patterns
+
+            .row
+                .col-md-12
+                    h2#education Education
+            .row
+                .col-md-12
+                    strong M.S. Computer Engineering, May 2014
+                    .pull-right University of Florida, Gainesville, FL
+                    br
+                    | GPA: 
+                    strong 3.79
+                    ul
+                        li Distributed Systems
+                        li GPU Architecture and Programming
+                        li Reconfigurable Computing
+                        li Computer Architecture
+                        li Computer Networks
+                        li Embedded Systems
+                        li Software Testing & Verification
+                        li Artificial Intelligence Concepts
+                        li Graduate Algorithms
+                        li Advanced Data Structures
+            .row
+                .col-md-12
+                    strong B.S. Computer Engineering, December 2011
+                    .pull-right University of Florida, Gainesville, FL
+                    br
+                    strong Minor in Business Administration
+                    br
+                    | GPA: 
+                    strong 3.62
+                    ul
+                        li
+                            strong In Major &ndash; Special
+                            ul
+                                li Integrated Product and Process Design (IPPD) 1 & 2
+                                li Created an interactive restaurant table for Disney
+                                li
+                                    | Information: 
+                                    a(href="http://ippd.ufl.edu/") http://ippd.ufl.edu/
+                        li
+                            strong In Major &ndash; Bridging the Gap
+                            ul
+                                li Reconfigurable Computing (Graduate Level)
+                                li Embedded Systems (Graduate Level)
+                                li Chip-Multiprocessor: GPU Architecture and Programming (Graduate Level)
+                                li Signals and Systems (Signal Processing)
+                        li
+                            strong In Major &ndash; Hardware
+                            ul
+                                li Computer Architecture (Graduate Level)
+                                li Microprocessor Applications
+                                li Digital Design
+                                li Digital Logic and Computer Systems
+                                li Introduction to Computer Organization
+                                li Circuits 1
+                        li
+                            strong In Major &ndash; Software
+                            ul
+                                li Computer Networks (Graduate Level)
+                                li Information and Database Systems
+                                li Software Engineering
+                                li Programming Language Concepts
+                                li Computer Network Fundamentals
+                                li Operating Systems
+                                li Data Structures and Algorithms
+                                li Computational Numerical Analysis
+                                li Computational Linear Algebra
+                                li Programming for CIS	 Majors 1
+                                li Programming for CIS Majors 2
+                                li Applications of Discrete Structures
+                        li
+                            strong In Major &ndash; Other
+                            ul
+                                li Legal and Social Issues in Computing (Ethics course)
+                        li
+                            strong Engineering
+                            ul
+                                li Physics with Calculus 1
+                                li Physics with Calculus 2
+                                li Analytical Geometry and Calculus 3
+                                li Differential Equations
+                                li Engineering Statistics
+                                li Technical Writing
+                        li
+                            strong Business Minor
+                            ul
+                                li Microeconomics
+                                li Macroeconomics
+                                li Business Finance
+                                li Financial Accounting
+                                li Management
+                                li Marketing
+                        li
+                            strong Out of Major / General Education
+                            ul
+                                li Biology for Engineers
+                                li Chinese Literature and Heritage
+                                li General Psychology
+                                li Housing, People, and Places in a Spatially Diverse America
+
+            .row
+                .col-md-12
+                    h2#extras Extras
+            .row
+                .col-md-12
+                    ul
+                        li Expert level skier
+                        li Completed the Walt Disney World Half Marathon on 1-17-2012 with a time of 2:14:03
